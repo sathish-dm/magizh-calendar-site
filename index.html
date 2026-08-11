@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magizh Calendar — மகிழ் நாட்காட்டி</title>
+<meta name="description" content="An ad-free Tamil calendar that works entirely offline. Large, clear type.">
+<style>
+  :root {
+    --bg: #FDFBF6;
+    --card: #F5F1E6;
+    --surface: #FFFDF7;
+    --ink: #221C19;
+    --muted: #584F4A;
+    --brand: #6E1B21;
+    --onBrand: #FAF4E6;
+    --hairline: rgba(185,139,46,.35);
+    --divider: rgba(34,28,25,.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17130F;
+      --card: #221C17;
+      --surface: #2A231D;
+      --ink: #F4EDE1;
+      --muted: #B6A996;
+      --brand: #EBA8A3;
+      --onBrand: #FBF1E6;
+      --hairline: rgba(217,178,94,.30);
+      --divider: rgba(244,237,225,.10);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Sans Tamil", -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 3rem; }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0 0 .35rem;
+    color: var(--brand);
+  }
+  .ta-title { font-size: 1.3rem; color: var(--muted); margin: 0 0 1rem; }
+  .tagline { font-size: 1.1rem; color: var(--ink); margin: 0; }
+  h2 {
+    font-size: 1.2rem;
+    margin: 2.5rem 0 .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--hairline);
+  }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .35rem; }
+  h3 + p { margin-top: 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--brand); }
+  .card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 1.25rem 1.35rem;
+    margin: 1.25rem 0;
+  }
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: 14px;
+    padding: 1.35rem;
+    text-align: center;
+  }
+  .contact a { font-weight: 700; font-size: 1.05rem; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--hairline);
+    font-size: .95rem;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Magizh Calendar</h1>
+    <p class="ta-title">மகிழ் நாட்காட்டி</p>
+    <p class="tagline">A Tamil calendar with no advertisements, that works with no internet.</p>
+  </header>
+
+  <div class="card">
+    <p style="margin:0">
+      Today's Tamil date, the day's festivals, sunrise and sunset, and Rahu
+      Kalam, Yamagandam and Kuligai — in large, clear type, with nothing else
+      competing for the screen.
+    </p>
+  </div>
+
+  <h2>Support</h2>
+
+  <h3>The app shows no advertisements at all — is that right?</h3>
+  <p>
+    Yes. There are no advertisements, no paid upgrade, and no account. The app
+    also makes no network requests whatsoever, which is what makes that a fact
+    about how it is built rather than a promise.
+  </p>
+
+  <h3>Does it work without internet?</h3>
+  <p>
+    Completely. Every date is stored inside the app when you install it. You can
+    keep the phone in flight mode permanently and nothing changes.
+  </p>
+
+  <h3>The text is too small, or too large</h3>
+  <p>
+    Open <strong>அமைப்பு / Settings</strong> from the top right and choose
+    சிறியது, இயல்பு or பெரியது. The app also follows your phone's own text size
+    setting, so both work together.
+  </p>
+
+  <h3>The timings look wrong for my town</h3>
+  <p>
+    Sunrise, sunset and the kaalam timings are calculated for the town chosen in
+    Settings, which defaults to Chennai. Pick your own town from the list and
+    the timings will follow.
+  </p>
+
+  <h3>A date does not match my almanac</h3>
+  <p>
+    The dates are computed astronomically, which follows the
+    <strong>Thirukanitha</strong> tradition. Families who follow the
+    <strong>Vakya</strong> (Pambu) panchangam will see a different date on some
+    days, and both are correct within their own tradition. If you believe a date
+    is wrong within Thirukanitha, please write — the calendar dates for 2026
+    have been checked against published Tamil calendars, and reports of errors
+    in later years are genuinely useful.
+  </p>
+
+  <h3>How far ahead does it go?</h3>
+  <p>Through the end of 2035.</p>
+
+  <h2>Contact</h2>
+  <!-- REPLACE CONTACT_EMAIL below, here and in privacy.html, before submitting
+       to either store. Both require a working support contact. -->
+  <div class="contact">
+    <p style="margin:0 0 .35rem">Questions, corrections, or a date that looks wrong:</p>
+    <strong>CONTACT_EMAIL</strong>
+  </div>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a> · தனியுரிமைக் கொள்கை
+    <br><br>
+    Magizh Calendar collects nothing and sends nothing.
+  </footer>
+</main>
+</body>
+</html>
