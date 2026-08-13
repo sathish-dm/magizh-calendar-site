@@ -14,5 +14,6 @@ describe it should not either.
 
 The app source lives in a separate private repository.
 
-**Before store submission:** replace `CONTACT_EMAIL` in both files. Both stores
-require a working support contact.
+Support contact on both pages is **hello@magizh.me**. Both stores require a
+working address here, so if it ever changes, change it in `index.html` and
+`privacy.html` together — the store listings point at these URLs.
